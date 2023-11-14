@@ -1,0 +1,70 @@
+#container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: visible;
+  z-index: 0;
+  max-height: 800px;
+  &.seleccionado {
+    ::before {
+      content: "";
+      position: absolute;
+      height: 120%;
+      width: calc(100% + 8px);
+      top: -4px;
+      left: 0px;
+      background-color: #da4443;
+      z-index: -2;
+      border-radius: 5px;
+    }
+  }
+}
+
+#tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var.$principal;
+  border-radius: 25px 5px 5px 25px;
+  padding-right: 2rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: larger;
+  color: #f0fbff;
+  span:first-of-type {
+    width: 95px;
+  }
+  &seleccionado {
+    background-color: var.$principal-acento;
+    -webkit-box-shadow: inset 0px 0px 7px 4px var.$principal;
+    -moz-box-shadow: inset 0px 0px 7px 4px var.$principal;
+    box-shadow: inset 0px 0px 7px 4px var.$principal;
+  }
+}
+
+#flecha {
+  margin-left: 8px;
+  height: 20px;
+  z-index: 1;
+  &.invisible {
+    opacity: 0;
+  }
+}
+
+#circulo {
+  border-radius: 50%;
+  height: 25px;
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0.125);
+  margin-left: 8px;
+}
+
+img {
+  max-height: 40px;
+  z-index: 1;
+}
+
+span {
+  user-select: none;
+}

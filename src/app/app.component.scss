@@ -1,19 +1,10 @@
-#tituloContainer {
+@use "./../assets/styles/var.scss";
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #88eef2;
-  padding: 0 5px;
-  border-radius: 35px;
-  height: 80px;
-
-  img {
-    height: 2.5rem;
-    margin: 15px;
-  }
-}
-
-header {
+  padding: 0 20px;
+  user-select: none;
   background: linear-gradient(
     to right,
     #6188ff,
@@ -22,4 +13,60 @@ header {
     #71a4f3 97%,
     #8ec0f0 100%
   );
+  a {
+    color: var.$whiteText;
+    text-decoration: none;
+    background-color: #4379cf;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    border-radius: 50px;
+    font-size: x-large;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #6188ff,
+    #6188ff 70%,
+    #71a4f3 71%,
+    #71a4f3 97%,
+    #8ec0f0 100%
+  );
+  color: var.$whiteText;
+  text-align: end;
+  padding: 20px 0;
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: #f8f9fa;
+    margin-right: 2rem;
+  }
+}
+
+#tituloContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #88eef2;
+  padding: 0 5px;
+  border-radius: 35px;
+  height: 50px;
+  color: var.$whiteText;
+  border: solid 3px #30408d;
+  img {
+    height: 40px;
+  }
+  h1 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 2px #30707a;
+  }
 }
