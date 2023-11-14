@@ -1,0 +1,25 @@
+#tituloContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #88eef2;
+  padding: 0 5px;
+  border-radius: 35px;
+  height: 80px;
+
+  img {
+    height: 2.5rem;
+    margin: 15px;
+  }
+}
+
+header {
+  background: linear-gradient(
+    to right,
+    #6188ff,
+    #6188ff 70%,
+    #71a4f3 71%,
+    #71a4f3 97%,
+    #8ec0f0 100%
+  );
+}
