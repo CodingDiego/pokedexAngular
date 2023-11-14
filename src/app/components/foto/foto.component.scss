@@ -13,9 +13,17 @@
     #c9e2f4 15px,
     #c9e2f4 25px
   );
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+  }
 }
 
 img {
   width: 100%;
   image-rendering: pixelated;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
