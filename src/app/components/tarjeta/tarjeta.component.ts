@@ -6,9 +6,9 @@ import {
   Output,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PokemonService } from '../../pokemon.service';
-import { Pokemon, Species } from '../../../../interfaces/pokemon';
-import { Resultado } from '../../../../interfaces/pokeApi';
+import { PokemonService } from '../../../../api/src/pokemon.service';
+import { Pokemon, Species } from '../../../../api/interfaces/pokemon';
+import { Resultado } from '../../../../api/interfaces/pokeApi';
 
 @Component({
   selector: 'app-tarjeta',

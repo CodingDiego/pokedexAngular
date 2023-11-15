@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FotoComponent } from '../../components/foto/foto.component';
 import { DetalleComponent } from '../../components/detalle/detalle.component';
 import { TarjetaComponent } from '../../components/tarjeta/tarjeta.component';
-import { Pokemon } from '../../../../interfaces/pokemon';
-import { PokemonService } from '../../pokemon.service';
-import { Resultado } from '../../../../interfaces/pokeApi';
+import { Pokemon } from '../../../../api/interfaces/pokemon';
+import { PokemonService } from '../../../../api/src/pokemon.service';
+import { Resultado } from '../../../../api/interfaces/pokeApi';
 
 @Component({
   selector: 'app-home',
