@@ -8,10 +8,10 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Pokemon } from '../../../../api/interfaces/pokemon';
-import { PokemonService } from '../../../../api/src/pokemon.service';
+import { Pokemon } from '../../interfaces/pokemon';
 import { outputAst } from '@angular/compiler';
 import { TarjetaComponent } from '../tarjeta/tarjeta.component';
+import { PokemonService } from '../../pokemon.service';
 
 @Component({
   selector: 'app-detalle',
